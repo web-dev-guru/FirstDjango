@@ -40,6 +40,12 @@ class OrderLine(models.Model):
     qty=models.IntegerField(default=0)
     spicy=models.ForeignKey(SpicyLevel, on_delete=models.CASCADE) #spicy
 
+class Contact(models.Model):
+    address=models.CharField(max_length=200)
+    telephone=models.CharField(max_length=200)
+
+
+
 
 
 
